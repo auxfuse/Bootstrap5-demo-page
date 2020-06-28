@@ -3,6 +3,16 @@
     /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat&display=swap');
 
+/* Root Variables */
+:root {
+    --primary-font: 'Maven Pro', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --primary-color: #2d2d2d;
+    --secondary-color: #e58972;
+    --tertiary-color: #100e34;
+    --highlight: #ffffff;
+}
+
     /* Base Reset */
 * {
     margin: 0;
@@ -12,12 +22,34 @@
 /* Index page */
 
 .landing-image {
-    background: url("../images/steelseries.png") center no-repeat;
+    background: var(--secondary-color) url("../images/steelseries.png") no-repeat center;
     background-size: cover;
     height: 50vh;
     width: auto;
     position: relative;
 }
+
+.welcome-img h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    color: var(--primary-color);
+    position: absolute;
+    top: 25%;
+    left: -35%;
+    right: 0;
+    text-align: center;
+}
+
+.welcome-img p {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: -35%;
+    text-align: center;
+}
+
 
 /* Media Queries */
 
