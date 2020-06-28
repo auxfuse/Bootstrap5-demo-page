@@ -1,0 +1,28 @@
+/* Globals */
+
+    /* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Montserrat&display=swap');
+
+    /* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Index page */
+
+.landing-image {
+    background: url("../images/steelseries.png") center no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: auto;
+    position: relative;
+}
+
+/* Media Queries */
+
+@media (min-width: 722px) {
+    .landing-image {
+        background-size: contain;
+    }
+}
